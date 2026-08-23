@@ -2,1138 +2,393 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidden India | Discover Beyond the Hotspots</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="style.css">
-
+    <!-- Google Gen AI SDK for Browser -->
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.run/@google/genai"
+      }
+    }
+    </script>
 </head>
-
 
 <body>
 
-
 <!-- ================= NAVBAR ================= -->
-
 <header class="navbar">
-
     <div class="logo">
-
-        <span>✦</span>
-
-        HIDDEN INDIA
-
+        <span>✦</span> HIDDEN INDIA
     </div>
-
 
     <nav>
-
         <a href="#problem">Problem</a>
-
         <a href="#explore">Explore</a>
-
         <a href="#ai">AI Guide</a>
-
         <a href="#impact">Impact</a>
-
     </nav>
 
-
-    <button
-        class="nav-button"
-        onclick="goToExplore()">
-
+    <button class="nav-button" onclick="goToExplore()">
         Discover Places →
-
     </button>
-
 </header>
 
-
-
 <!-- ================= HERO ================= -->
-
 <section class="hero">
-
-
     <div class="hero-text">
-
-
         <div class="eyebrow">
-
             ✦ BEYOND THE TOURIST TRAIL
-
         </div>
-
 
         <h1>
-
-            Everyone knows
-            <span>the famous India.</span>
-
+            Everyone knows <span>the famous India.</span>
         </h1>
 
-
         <p>
-
-            But thousands of villages, heritage sites,
-            craft communities and natural wonders remain
-            outside the usual tourist map.
-
+            But thousands of villages, heritage sites, craft communities and natural wonders remain outside the usual tourist map.
         </p>
-
 
         <div class="hero-buttons">
-
-            <button
-                class="primary-button"
-                onclick="goToExplore()">
-
+            <button class="primary-button" onclick="goToExplore()">
                 Discover Hidden India →
-
             </button>
-
-
-            <button
-                class="secondary-button"
-                onclick="goToProblem()">
-
+            <button class="secondary-button" onclick="goToProblem()">
                 Understand the Problem
-
             </button>
-
         </div>
-
 
         <div class="hero-note">
-
             ✦ AI-powered responsible tourism discovery
-
         </div>
-
     </div>
-
-
 
     <div class="hero-visual">
+        <video autoplay loop muted src="From Klickpin.com- Need fresh inspiration Try these beautiful digital product ideas that help you get the look without the stress for a polished l.mp4"></video>
 
-
-        <img
-            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
-            alt="Indian landscape">
-
-
-        <div class="floating-card">
-
+        <!-- Floating Card Button -->
+        <div class="floating-card" id="gem-trigger" style="cursor: pointer;">
             <span>✦</span>
-
             <div>
-
-                <strong>
-                    Hidden Gem
-                </strong>
-
-                <small>
-                    Waiting to be discovered
-                </small>
-
+                <strong>Hidden Gem</strong>
+                <small>Waiting to be discovered</small>
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- ================= PROBLEM ================= -->
-
-<section
-    class="problem"
-    id="problem">
-
-
+<section class="problem" id="problem">
     <div class="section-title">
-
         <div>
-
-            <div class="eyebrow">
-                THE PROBLEM
-            </div>
-
+            <div class="eyebrow">THE PROBLEM</div>
             <h2>
-
-                India has thousands
-                of stories.
-
-                <span>
-                    Tourism hears only a few.
-                </span>
-
+                India has thousands of stories. <span>Tourism hears only a few.</span>
             </h2>
-
         </div>
-
-
         <p>
-
-            Tourism is concentrated around a small
-            number of famous destinations while
-            many culturally significant and naturally
-            beautiful locations remain overlooked.
-
+            Tourism is concentrated around a small number of famous destinations while many culturally significant and naturally beautiful locations remain overlooked.
         </p>
-
     </div>
-
-
 
     <div class="comparison">
-
-
-        <!-- POPULAR -->
-
         <div class="comparison-card">
-
-
-            <div class="tag red">
-
-                🔴 POPULAR HOTSPOT
-
-            </div>
-
-
-            <img
-                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85"
-                alt="Taj Mahal">
-
-
+            <div class="tag red">🔴 POPULAR HOTSPOT</div>
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85" alt="Taj Mahal">
             <div class="comparison-content">
-
-                <h3>
-                    Taj Mahal
-                </h3>
-
-                <p>
-                    Agra, Uttar Pradesh
-                </p>
-
-
+                <h3>Taj Mahal</h3>
+                <p>Agra, Uttar Pradesh</p>
                 <div class="pressure">
-
-                    <span>
-                        Tourist pressure
-                    </span>
-
-                    <strong>
-                        VERY HIGH
-                    </strong>
-
+                    <span>Tourist pressure</span>
+                    <strong>VERY HIGH</strong>
                 </div>
-
-
                 <div class="pressure-bar">
-
                     <div class="very-high"></div>
-
                 </div>
-
-
-                <small>
-
-                    Globally famous destinations
-                    attract a large concentration
-                    of visitors.
-
-                </small>
-
+                <small>Globally famous destinations attract a large concentration of visitors.</small>
             </div>
-
         </div>
 
-
-
-        <div class="versus">
-
-            VS
-
-        </div>
-
-
-
-        <!-- HIDDEN -->
+        <div class="versus">VS</div>
 
         <div class="comparison-card">
-
-
-            <div class="tag green">
-
-                🟢 HIDDEN POTENTIAL
-
-            </div>
-
-
-            <img
-                src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1000&q=85"
-                alt="Indian hidden destination">
-
-
+            <div class="tag green">🟢 HIDDEN POTENTIAL</div>
+            <img src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1000&q=85" alt="Indian hidden destination">
             <div class="comparison-content">
-
-                <h3>
-                    Lesser-known India
-                </h3>
-
-                <p>
-                    Villages • Heritage • Nature
-                </p>
-
-
+                <h3>Lesser-known India</h3>
+                <p>Villages • Heritage • Nature</p>
                 <div class="pressure">
-
-                    <span>
-                        Tourist pressure
-                    </span>
-
-                    <strong>
-                        LOWER
-                    </strong>
-
+                    <span>Tourist pressure</span>
+                    <strong>LOWER</strong>
                 </div>
-
-
                 <div class="pressure-bar">
-
                     <div class="low"></div>
-
                 </div>
-
-
-                <small>
-
-                    Places with cultural, natural and
-                    community value can receive
-                    responsible tourism.
-
-                </small>
-
+                <small>Places with cultural, natural and community value can receive responsible tourism.</small>
             </div>
-
         </div>
-
     </div>
-
-
 
     <div class="opportunity">
-
-        <span>✦</span>
-
-        <strong>
-            Our opportunity:
-        </strong>
-
-        Spread tourism beyond the usual hotspots
-        and help local communities benefit.
-
+        <span>✦</span> <strong>Our opportunity:</strong> Spread tourism beyond the usual hotspots and help local communities benefit.
     </div>
-
 </section>
-
-
 
 <!-- ================= STATS ================= -->
-
 <section class="stats">
-
-
     <div>
-
         <strong>28+</strong>
-
-        <span>
-            States & UTs
-        </span>
-
+        <span>States & UTs</span>
     </div>
-
-
     <div>
-
         <strong>1000+</strong>
-
-        <span>
-            Potential destinations
-        </span>
-
+        <span>Potential destinations</span>
     </div>
-
-
     <div>
-
         <strong>AI</strong>
-
-        <span>
-            Personalized discovery
-        </span>
-
+        <span>Personalized discovery</span>
     </div>
-
-
     <div>
-
         <strong>♻</strong>
-
-        <span>
-            Responsible tourism
-        </span>
-
+        <span>Responsible tourism</span>
     </div>
-
 </section>
-
-
 
 <!-- ================= EXPLORE STATES ================= -->
-
-<section
-    class="explore"
-    id="explore">
-
-
+<section class="explore" id="explore">
     <div class="section-title">
-
-
         <div>
-
-            <div class="eyebrow">
-                STEP 01 • CHOOSE A STATE
-            </div>
-
-            <h2>
-
-                Choose a state.
-
-                <span>
-                    Find what tourists miss.
-                </span>
-
-            </h2>
-
+            <div class="eyebrow">STEP 01 • CHOOSE A STATE</div>
+            <h2>Choose a state. <span>Find what tourists miss.</span></h2>
         </div>
-
-
-        <p>
-
-            Explore destinations beyond the most
-            famous attractions.
-
-        </p>
-
+        <p>Explore destinations beyond the most famous attractions.</p>
     </div>
-
-
 
     <div class="state-grid">
-
-
-        <!-- RAJASTHAN -->
-
-        <div
-            class="state-card"
-            onclick="openState('Rajasthan')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=85"
-                alt="Rajasthan">
-
-
+        <div class="state-card" onclick="openState('Rajasthan')">
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=85" alt="Rajasthan">
             <div class="state-info">
-
-                <span>
-                    WEST • 01
-                </span>
-
-                <h3>
-                    Rajasthan
-                </h3>
-
-                <p>
-                    Beyond the famous forts
-                </p>
-
+                <span>WEST • 01</span>
+                <h3>Rajasthan</h3>
+                <p>Beyond the famous forts</p>
             </div>
-
         </div>
 
-
-
-        <!-- UTTAR PRADESH -->
-
-        <div
-            class="state-card"
-            onclick="openState('Uttar Pradesh')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85"
-                alt="Uttar Pradesh">
-
-
+        <div class="state-card" onclick="openState('Uttar Pradesh')">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=85" alt="Uttar Pradesh">
             <div class="state-info">
-
-                <span>
-                    NORTH • 02
-                </span>
-
-                <h3>
-                    Uttar Pradesh
-                </h3>
-
-                <p>
-                    Beyond the Taj Mahal
-                </p>
-
+                <span>NORTH • 02</span>
+                <h3>Uttar Pradesh</h3>
+                <p>Beyond the Taj Mahal</p>
             </div>
-
         </div>
 
-
-
-        <!-- MEGHALAYA -->
-
-        <div
-            class="state-card"
-            onclick="openState('Meghalaya')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85"
-                alt="Meghalaya">
-
-
+        <div class="state-card" onclick="openState('Meghalaya')">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85" alt="Meghalaya">
             <div class="state-info">
-
-                <span>
-                    NORTH EAST • 03
-                </span>
-
-                <h3>
-                    Meghalaya
-                </h3>
-
-                <p>
-                    Villages, waterfalls & culture
-                </p>
-
+                <span>NORTH EAST • 03</span>
+                <h3>Meghalaya</h3>
+                <p>Villages, waterfalls & culture</p>
             </div>
-
         </div>
 
-
-
-        <!-- KERALA -->
-
-        <div
-            class="state-card"
-            onclick="openState('Kerala')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85"
-                alt="Kerala">
-
-
+        <div class="state-card" onclick="openState('Kerala')">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=85" alt="Kerala">
             <div class="state-info">
-
-                <span>
-                    SOUTH • 04
-                </span>
-
-                <h3>
-                    Kerala
-                </h3>
-
-                <p>
-                    Beyond the backwaters
-                </p>
-
+                <span>SOUTH • 04</span>
+                <h3>Kerala</h3>
+                <p>Beyond the backwaters</p>
             </div>
-
         </div>
 
-
-
-        <!-- SIKKIM -->
-
-        <div
-            class="state-card"
-            onclick="openState('Sikkim')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=85"
-                alt="Sikkim">
-
-
+        <div class="state-card" onclick="openState('Sikkim')">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=900&q=85" alt="Sikkim">
             <div class="state-info">
-
-                <span>
-                    NORTH EAST • 05
-                </span>
-
-                <h3>
-                    Sikkim
-                </h3>
-
-                <p>
-                    Quiet Himalayan escapes
-                </p>
-
+                <span>NORTH EAST • 05</span>
+                <h3>Sikkim</h3>
+                <p>Quiet Himalayan escapes</p>
             </div>
-
         </div>
 
-
-
-        <!-- GUJARAT -->
-
-        <div
-            class="state-card"
-            onclick="openState('Gujarat')">
-
-
-            <img
-                src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=900&q=85"
-                alt="Gujarat">
-
-
+        <div class="state-card" onclick="openState('Gujarat')">
+            <img src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=900&q=85" alt="Gujarat">
             <div class="state-info">
-
-                <span>
-                    WEST • 06
-                </span>
-
-                <h3>
-                    Gujarat
-                </h3>
-
-                <p>
-                    Crafts & local communities
-                </p>
-
+                <span>WEST • 06</span>
+                <h3>Gujarat</h3>
+                <p>Crafts & local communities</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- ================= AI GUIDE ================= -->
-
-<section
-    class="ai-section"
-    id="ai">
-
-
+<section class="ai-section" id="ai">
     <div class="ai-left">
-
-
-        <div class="eyebrow">
-            STEP 02 • MEET YOUR AI GUIDE
-        </div>
-
-
-        <h2>
-
-            Tell us what
-            <span>you love.</span>
-
-        </h2>
-
-
-        <p>
-
-            Our AI recommends destinations based
-            on interests — while considering tourism
-            pressure and destination readiness.
-
-        </p>
-
+        <div class="eyebrow">STEP 02 • MEET YOUR AI GUIDE</div>
+        <h2>Tell us what <span>you love.</span></h2>
+        <p>Our AI recommends destinations based on interests — while considering tourism pressure and destination readiness.</p>
 
         <div class="interests">
-
-
-            <button onclick="selectInterest(this)">
-                🌿 Nature
-            </button>
-
-
-            <button onclick="selectInterest(this)">
-                🏛 Heritage
-            </button>
-
-
-            <button onclick="selectInterest(this)">
-                🎨 Crafts
-            </button>
-
-
-            <button onclick="selectInterest(this)">
-                🍛 Food
-            </button>
-
-
-            <button onclick="selectInterest(this)">
-                🥾 Adventure
-            </button>
-
-
-            <button onclick="selectInterest(this)">
-                🏘 Rural Life
-            </button>
-
+            <button onclick="selectInterest(this)">🌿 Nature</button>
+            <button onclick="selectInterest(this)">🏛 Heritage</button>
+            <button onclick="selectInterest(this)">🎨 Crafts</button>
+            <button onclick="selectInterest(this)">🍛 Food</button>
+            <button onclick="selectInterest(this)">🥾 Adventure</button>
+            <button onclick="selectInterest(this)">🏘 Rural Life</button>
         </div>
 
-
-        <button
-            class="ai-button"
-            onclick="getRecommendation()">
-
+        <button class="ai-button" onclick="getRecommendation()">
             ✦ Find My Hidden Place
-
         </button>
-
     </div>
-
-
-
-    <!-- AI CHARACTER -->
 
     <div class="ai-guide-card">
-
-
         <div class="guide-top">
-
-
-            <div class="guide-avatar">
-
-                🧑‍🌾
-
-            </div>
-
-
+            <div class="guide-avatar">🧑‍🌾</div>
             <div>
-
-                <strong>
-                    Hidden India AI
-                </strong>
-
-                <small>
-                    Your local discovery guide
-                </small>
-
+                <strong>Hidden India AI</strong>
+                <small>Your local discovery guide</small>
             </div>
-
         </div>
 
-
-        <div
-            class="guide-message"
-            id="aiMessage">
-
-            <strong>
-                Namaste! 🙏
-            </strong>
-
-            <br><br>
-
-            Tell me what kind of experience
-            you want.
-
-            <br><br>
-
-            I'll find somewhere beyond
-            the usual tourist trail.
-
+        <div class="guide-message" id="aiMessage">
+            <strong>Namaste! 🙏</strong><br><br>
+            Tell me what kind of experience you want.<br><br>
+            I'll find somewhere beyond the usual tourist trail.
         </div>
-
 
         <div class="online">
-
-            <span></span>
-
-            AI Guide Online
-
+            <span></span> AI Guide Online
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- ================= AI SCORE ================= -->
-
 <section class="score-section">
-
-
     <div class="section-title">
-
-
         <div>
-
-            <div class="eyebrow">
-                STEP 03 • SMART RECOMMENDATION
-            </div>
-
-            <h2>
-
-                A place isn't just
-                <span>beautiful.</span>
-
-                It's a possibility.
-
-            </h2>
-
+            <div class="eyebrow">STEP 03 • SMART RECOMMENDATION</div>
+            <h2>A place isn't just <span>beautiful.</span> It's a possibility.</h2>
         </div>
-
-
-        <p>
-
-            Hidden India evaluates destination
-            characteristics to demonstrate where
-            responsible tourism could be expanded.
-
-        </p>
-
+        <p>Hidden India evaluates destination characteristics to demonstrate where responsible tourism could be expanded.</p>
     </div>
-
-
 
     <div class="score-dashboard">
-
-
         <div class="score-main">
-
-
-            <div class="score-number">
-                91
-            </div>
-
-
+            <div class="score-number">91</div>
             <div>
-
-                <strong>
-                    Hidden Gem Score
-                </strong>
-
-                <p>
-                    Prototype recommendation
-                </p>
-
+                <strong>Hidden Gem Score</strong>
+                <p>Prototype recommendation</p>
             </div>
-
         </div>
-
 
         <div class="score-factors">
-
-
             <div>
-
-                <span>
-                    Cultural significance
-                </span>
-
-                <div class="progress">
-                    <i style="width:92%"></i>
-                </div>
-
+                <span>Cultural significance</span>
+                <div class="progress"><i style="width:92%"></i></div>
                 <b>92%</b>
-
             </div>
-
-
             <div>
-
-                <span>
-                    Uniqueness
-                </span>
-
-                <div class="progress">
-                    <i style="width:95%"></i>
-                </div>
-
+                <span>Uniqueness</span>
+                <div class="progress"><i style="width:95%"></i></div>
                 <b>95%</b>
-
             </div>
-
-
             <div>
-
-                <span>
-                    Community potential
-                </span>
-
-                <div class="progress">
-                    <i style="width:87%"></i>
-                </div>
-
+                <span>Community potential</span>
+                <div class="progress"><i style="width:87%"></i></div>
                 <b>87%</b>
-
             </div>
-
         </div>
-
     </div>
-
-
 
     <div class="capacity">
-
-
         <div>
-
-            <span>
-                TOURISM CAPACITY
-            </span>
-
-            <strong>
-                82 / 100
-            </strong>
-
+            <span>TOURISMCAPACITY</span>
+            <strong>82 / 100</strong>
         </div>
-
-
-        <div class="capacity-bar">
-
-            <div></div>
-
-        </div>
-
-
+        <div class="capacity-bar"><div></div></div>
         <div class="capacity-labels">
-
-            <span>
-                Current pressure: LOW
-            </span>
-
-            <span>
-                Infrastructure: MODERATE
-            </span>
-
-            <span>
-                Community readiness: HIGH
-            </span>
-
+            <span>Current pressure: LOW</span>
+            <span>Infrastructure: MODERATE</span>
+            <span>Community readiness: HIGH</span>
         </div>
-
     </div>
-
 
     <p class="prototype-note">
-
-        * Prototype estimate. A production system would
-        use verified tourism footfall, infrastructure,
-        environmental and community data.
-
+        * Prototype estimate. A production system would use verified tourism footfall, infrastructure, environmental and community data.
     </p>
-
 </section>
-
-
 
 <!-- ================= VIDEO / STORY ================= -->
-
 <section class="story">
-
-
     <div class="story-image">
-
-
-        <img
-            src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1200&q=85"
-            alt="Indian village landscape">
-
-
-        <a
-            href="https://www.youtube.com/results?search_query=hidden+places+in+india"
-            target="_blank"
-            class="play-button">
-
-            ▶
-
-        </a>
-
+        <img src="https://images.unsplash.com/photo-1532664189809-02133fee698d?auto=format&fit=crop&w=1200&q=85" alt="Indian village landscape">
+        <a href="https://www.youtube.com/results?search_query=hidden+places+in+india" target="_blank" class="play-button">▶</a>
     </div>
-
-
 
     <div class="story-content">
-
-
-        <div class="eyebrow">
-            SEE INDIA DIFFERENTLY
-        </div>
-
-
-        <h2>
-
-            Every destination
-            has a story.
-
-        </h2>
-
-
-        <p>
-
-            From traditional crafts and village
-            traditions to forgotten architecture
-            and natural landscapes — Hidden India
-            brings overlooked stories to travellers.
-
-        </p>
-
-
-        <a
-            href="https://www.youtube.com/results?search_query=lesser+known+places+in+India"
-            target="_blank"
-            class="watch-link">
-
-            Watch destination stories →
-
-        </a>
-
+        <div class="eyebrow">SEE INDIA DIFFERENTLY</div>
+        <h2>Every destination has a story.</h2>
+        <p>From traditional crafts and village traditions to forgotten architecture and natural landscapes — Hidden India brings overlooked stories to travellers.</p>
+        <a href="https://www.youtube.com/results?search_query=lesser+known+places+in+India" target="_blank" class="watch-link">Watch destination stories →</a>
     </div>
-
 </section>
-
-
 
 <!-- ================= IMPACT ================= -->
-
-<section
-    class="impact"
-    id="impact">
-
-
-    <div class="eyebrow">
-        THE IMPACT
-    </div>
-
-
-    <h2>
-
-        Move tourism.
-
-        <span>
-            Move opportunity.
-        </span>
-
-    </h2>
-
+<section class="impact" id="impact">
+    <div class="eyebrow">THE IMPACT</div>
+    <h2>Move tourism. <span>Move opportunity.</span></h2>
 
     <div class="impact-flow">
-
-
-        <div>
-
-            <span>01</span>
-
-            Hidden destination
-
-        </div>
-
-
+        <div><span>01</span> Hidden destination</div>
         <b>→</b>
-
-
-        <div>
-
-            <span>02</span>
-
-            Responsible tourists
-
-        </div>
-
-
+        <div><span>02</span> Responsible tourists</div>
         <b>→</b>
-
-
-        <div>
-
-            <span>03</span>
-
-            Local businesses
-
-        </div>
-
-
+        <div><span>03</span> Local businesses</div>
         <b>→</b>
-
-
-        <div>
-
-            <span>04</span>
-
-            Rural employment
-
-        </div>
-
+        <div><span>04</span> Rural employment</div>
     </div>
-
 </section>
 
-
-
 <!-- ================= FOOTER ================= -->
-
 <footer>
-
-
-    <div class="footer-logo">
-        ✦ HIDDEN INDIA
-    </div>
-
-
-    <p>
-        Discover places before they become hotspots.
-    </p>
-
-
-    <small>
-        AI • Responsible Tourism • Local Communities
-    </small>
-
+    <div class="footer-logo">✦ HIDDEN INDIA</div>
+    <p>Discover places before they become hotspots.</p>
+    <small>AI • Responsible Tourism • Local Communities</small>
 </footer>
 
+<!-- ================= AI GEM MODAL ================= -->
+<div id="ai-modal" class="gem-modal-overlay hidden">
+  <div class="gem-modal-box">
+    <button id="close-modal-btn" class="gem-close-btn">&times;</button>
+    <div class="modal-header">
+      <h2>✦ AI Hidden Gem Finder</h2>
+      <p>Select your destination state and budget to uncover unexplored spots.</p>
+    </div>
 
+    <div class="gem-form-row">
+      <input type="text" id="user-state" placeholder="Enter State (e.g. Himachal, Kerala, Meghalaya, Gujarat)" />
+      <select id="user-budget">
+        <option value="Low / Backpacker (Under ₹1,500/day)">Budget: Low / Backpacker (Under ₹1,500/day)</option>
+        <option value="Moderate (₹1,500 - ₹4,000/day)">Budget: Moderate (₹1,500 - ₹4,000/day)</option>
+        <option value="Luxury (₹4,000+/day)">Budget: Luxury (₹4,000+/day)</option>
+      </select>
+      <button id="find-gems-btn">Discover Gems</button>
+    </div>
 
-<script src="script.js"></script>
-
+    <div id="gem-cards-container" class="gem-cards-grid"></div>
+  </div>
+</div>
+<marquee behavior="" direction="">champ</marquee>
+<script type="module" src="script.js"></script>
 </body>
 
 </html>
